@@ -24,7 +24,16 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+function createDots(numberOfDots) {
+    const container = document.getElementById("dot-container");
 
+    for (let i = 1; i <= numberOfDots; i++) {
+        const span = document.createElement('span');
+        span.className = 'dot';
+        span.onclick = function() { currentSlide(i); };
+        container.appendChild(span);
+    }
+}
 // Add event listeners for keyboard navigation
 document.addEventListener("keydown", function(event) {
     switch (event.key) {

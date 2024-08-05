@@ -9,68 +9,103 @@
 <body>
     <div class="slideshow-container">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <div class="slides fade">
-            <div class = content>
+        <div class="slides fade" >
+            <div class = content style="margin-top: 25%;margin-left: 15%;">
                 <h1>Duc Ho (Duke)</h1>
                 <p>Application Developer Co-op, IT Back Office</p>
             </div>
         </div>
         <div class="slides fade">
+            <div class = slide>
             <div class = content>
                 <h1>About Me</h1>
-                <p>I have been working as an Application Developer (Co-op) for 7 months with FHLB as the official start of my career. 
-                    Graduated from Kennesaw State University in Georgia with a Bachelor of Science in Computer Science 
-                    During my time in college, I was a tutor for math and computer science. And after graduating, 
-                    I enrolled in a programing bootcamp to enhance my technical skills.</p>
+                <ul>• I have been working as an Application Developer (Co-op) for 7 months with FHLB as the official start of my career.</ul> 
+                <ul>• Graduated from Kennesaw State University in Georgia with a Bachelor of Science in Computer Science</ul> 
+                <ul>• During my time in college, I was a tutor for math and computer science. And after graduating, 
+                    I enrolled in a programing bootcamp to enhance my technical skills.</ul>
+            </div>
+            <div class ="side-image" style="width: 400px;">
+                <img src="images/my-picture.jpg" alt="My Image" width=350px height = 500px>
+            </div>
+        </div>
+        </div>
+        <div class="slides fade">
+            <div class = content>
+                <div class = grid-containter style="margin-top: 5%;">
+                    <div>
+                        <h1>My Interest</h1>
+                        <ul>• Programming</ul>
+                        <ul>• Using AI (ChatGPT, Claude, . . . )</ul>
+                        <ul>• Table Tennis</ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <div class = card><img src="images/gpt-image.png" alt="GPT Image" class="card-image"></div>
+                        <div class = card><img src="images/pingpong.png" alt="GPT Image" class="card-image"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="slides fade">
-            <div class = content>My Interest
-                Programming 
-•Using AI (ChatGPT, Claude, . . . ) 
-•Table Tennis 
+            <div class = content style="margin-top: 5%;">
+                <div>
+                    <h1>My story at the bank</h1>
+                    <ul>• First task at the bank I get to work with 84 Tidal Jobs definitions</ul>
+                    (Note: Tidal Automation is a scheduling tool the bank use to run procedural tasks like download, upload and moving data/files without manual interactions. Helping everyone save lots of time)
+                    <ul>• Planned and implement 25 CAB Changes on Tidal Jobs, many BAU items to prepare for deployments, and monitoring/alerting tasks.</ul>
+                    (Note: CAB is the IT's department change management system that help reviews if a task/ feature is safe to implement)</div>
+                </div>
+        </div>
+        <div class="slides fade">
+            <div class = content>
+                <h1>Currently, I am working on</h1>
+                <ul>• Researching and Implementing Blue/Green Deployment on our bank’s existing resources </ul>
+                <ul>• Introducing Graphic Monitoring on eAdvantage web application to help analyze and alert on metrics and resources availability trends </ul>
+                <ul>• And helping on encrypting connections between applications and our databases, allowing data transferring data to be encrypted, which help prevent unauthorized parties to read from this information </ul>
+        </div>
+        </div>
+        <div class="slides fade">
+            <div>
+                <div class = wordy-content>
+                    <h1>Challenges</h1>
+                    <ul>•As the bank requires thorough testing and solid validation, the time spent on testing is extended due to validating if the environment reflects production. </ul>
+                    <ul>•Deploying changes is done manually and require meticulous timing to avoid conflicting with scheduled tasks. This require frequent overtime for our administrators. </ul>
+                    <ul>•Currently, the bank’s internal applications are running for extended time with Virtual Machine, which can take very long to restart, requires a large amount of physical resource </ul>
+                </div>
+                <div class = card style="max-width: 1000px; ">
+                    <img src="images/virtual-machine.png" alt="Virtual" width=100% class="card-image">
+                </div>
             </div>
         </div>
         <div class="slides fade">
-            <div class = content>My story at the bank
-                •First task at the bank I get to work with 84 Tidal Jobs definitions
-                (Note: Tidal Automation is a scheduling tool the bank use to run procedural tasks like download, upload and moving data/files without manual interactions. Helping everyone save lots of time)
-                •Planned and implement 25 CAB Changes on Tidal Jobs, many BAU items to prepare for deployments, and monitoring/alerting tasks.
-                (Note: CAB is the IT's department change management system that help reviews if a task/ feature is safe to implement)</div>
-        </div>
-        <div class="slides fade">
-            <div class = content>•Currently, I am working on: 
-                •Researching and Implementing Blue/Green Deployment on our bank’s existing resources 
-                •Introducing Graphic Monitoring on eAdvantage web application to help analyze and alert on metrics and resources availability trends 
-                •And helping on encrypting connections between applications and our databases, allowing data transferring data to be encrypted, which help prevent unauthorized parties to read from this information </div>
-        </div>
-        <div class="slides fade">
-            <div class = content>Challenges
-                •As the bank requires thorough testing and solid validation, the time spent on testing is extended due to validating if the environment reflects production. 
-•Deploying changes is done manually and require meticulous timing to avoid conflicting with scheduled tasks. This require frequent overtime for our administrators. 
-•Currently, the bank’s internal applications are running for extended time with Virtual Machine, which can take very long to restart, requires a large amount of physical resource 
+            <div>
+                <div class = wordy-content>
+                    <h1>Solutions</h1>
+                    <ul>• By Introducing Container for our internal applications: 
+                    <ul>• Container is a self-contained, executable package of software that you can use to run an application. </ul>
+                    <ul>• Is portable, quick to start and stop, and easily replaced as it is very light. (Instead of dedicating a new VM used to run applications, we can have only one VM that can be used to run multiple application in  isolated environments. </ul>
+                    <ul>• With container, I believe it will significantly increase the efficiency in testing and deploying processes, allow developer to be more open in handling different applications, and help increase the overall performance of the team </ul>
+                </div>
+                <div class = card style="max-width: 600px;margin-left: 20%;">
+                    <img src="images/container.png" alt="Container" class = "card-image">
+                </div>
             </div>
+
         </div>
         <div class="slides fade">
-            <div class = content>Solutions
-                •By Introducing Container for our internal applications: 
-•Container is a self-contained, executable package of software that you can use to run an application. 
-•Is portable, quick to start and stop, and easily replaced as it is very light. (Instead of dedicating a new VM used to run applications, we can have only one VM that can be used to run multiple application in  isolated environments. 
-•With container, I believe it will significantly increase the efficiency in testing and deploying processes, allow developer to be more open in handling different applications, and help increase the overall performance of the team 
+            <div class = wordy-content>
+                <h1>What i like about the bank</h1>
+                <ul>• The people: </ul>
+                <ul>• IT-Back Office – Raj, Harsha, Kiran, Ramya, Kelvin, 
+                 Sabina, Sheila, Yaroslav, Ryan, Jeff, Dinuka, Dhileepan </ul>
+                <ul>• System Admin and Database Admin </ul>
+                <ul>• IT-Members Team </ul>
+                <ul>• The Mission </ul>
+                <ul>• Intern lunch and learn program </ul>
+                <ul>• Habitat Build </ul>
+                <ul>• YP Community</ul>
+                <ul>• The Food</ul>
             </div>
-        </div>
-        <div class="slides fade">
-            <div class = content>What i like about the bank
-                •The people: 
-                •IT-Back Office – Raj, Harsha, Kiran, Ramya, Kelvin, 
-                 Sabina, Sheila, Yaroslav, Ryan, Jeff, Dinuka, Dhileepan 
-                •System Admin and Database Admin 
-                •IT-Members Team 
-                •The Mission 
-                •Intern lunch and learn program 
-                •Habitat Build 
-                •YP Community 
-                •The Food </div>
         </div>
         <div class="slides fade">
             <div class = content>Questions?</div>
@@ -79,10 +114,16 @@
             
     </div>
     <!-- Dots/bullets -->
-    <div style="text-align:center;margin-top: 1%;">
+    <div id = "dot-container" style="text-align:center;margin-top: 1%;" onload="createDots(9)">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
     </div>
     <script src="scripts.js"></script>
 </body>

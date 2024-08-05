@@ -11,17 +11,30 @@
 }
 /* Hide all slides by default */
 .slides {
-    display: none;
-    width: 960px;
-    height: 540px;
-    background-color: white;
+    width: 1060px;
+    height: 753px;
+    background-color: rgba(255, 255, 255, 0.77);
+    background-image: url(images/bg-2.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 5%;
 }
 .content{
     position: inherit;
+    color: black;
+}
+.slide{
+    display: flex;
+    align-items: center;
+}
+.grid-containter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -42,7 +55,18 @@
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+.card {
+    border: 2px solid #ddd; /* Border around the card */
+    overflow: hidden; /* Ensure the image and content fit within the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a lifted effect */
+    max-width: 450px; /* Adjust size as needed */
+    margin: 0 0; 
+}
 
+.card-image {
+    width: 100%; /* Make the image fill the card's width */
+    height: auto; /* Maintain the aspect ratio */
+}
 /* Caption text */
 .text {
     color: #f2f2f2;
@@ -81,11 +105,10 @@
 
 /* Fading animation */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 
 @-webkit-keyframes fade {
     from {opacity: .4} 
@@ -95,4 +118,33 @@
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+@media (min-width: 750px) {
+    .content {
+        font-size: xx-large
+    }
+    .wordy-content{
+        font-size: x-large;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 561px) and (max-width: 749px) {
+    .content {
+        font-size: x-large; /* Default font size or slightly larger for medium screens */
+    }
+    .wordy-content{
+        font-size: large;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 560px) {
+    .content {
+        font-size: large; /* Smaller font size for small screens */
+    }
+    .wordy-content{
+        font-size: medium;
+    }
 }
